@@ -1,17 +1,11 @@
-import './App.css';
-import { StyledButton, StyledButtonWithHover } from './component/styled/Button';
+import RattingCard from './component/RattingCard/RattingCard';
+import { GlobalStyle } from './GlobalStyles';
 
 function App() {
   return (
-    <div className="App">
-     <div className='button_box'>
-      <StyledButton>Live</StyledButton>
-      <StyledButton variant='primary'>Github</StyledButton>
-     
-     </div>
-     <div >
-     <StyledButtonWithHover>Hover Me</StyledButtonWithHover>
-     </div>
+    <div>
+      <GlobalStyle/>
+      <RattingCard/>
     </div>
   );
 }
