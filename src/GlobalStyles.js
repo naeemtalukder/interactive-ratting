@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');,
 *, 
 *::after, 
 *::before {
@@ -18,6 +19,8 @@ body {
     display: grid;
     place-items: center;
     padding: 0 1rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
 }
 
 `
