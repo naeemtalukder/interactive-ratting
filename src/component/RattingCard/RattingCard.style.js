@@ -53,7 +53,8 @@ export const StarButton = styled(RattingIconBox)`
     font-weight: 700;
     color: #ffffff;
 
-    background-color: ${({selected}) => selected ? 'hsl(25, 97%, 53%)' : 'hsl(213, 19%, 18%)'};
+    background: ${({selected, theme}) => 
+    selected ? 'hsl(25, 97%, 53%)' : 'hsl(213, 16%, 22%)'};
 
     &:not(:last-child){
         margin-right: 1rem;
