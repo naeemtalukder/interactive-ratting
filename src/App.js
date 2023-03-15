@@ -19,11 +19,23 @@ function App() {
     },
   });
 
+  const themeSwitchHandler = () => {
+    setTheme(theme => ({
+      ...theme,
+      mode: theme.mode === 'dark' ? 'light' : 'dark',
+    }));
+  };
+
   return (
       <ThemeProvider theme={theme}>
         <div>
-        <GlobalStyle/>
-        <RattingCard/>
+          <GlobalStyle/>
+            <button onClick={themeSwitchHandler}>
+              {
+                theme.mode === 'dark' ? 'Light' : 'Dark'
+              }
+            </button>
+          <RattingCard/>
         </div>
       </ThemeProvider>
   );

@@ -7,7 +7,7 @@ export const RattingCardWrapper = styled.div`
     max-width: 450px;
     min-width: 450px;
     background: white;
-    background-color: hsl(213, 19%, 18%);
+    background-color:  ${({theme}) => theme.mode === 'dark' ? theme.colors.darkBlue : theme.colors.white};
     padding: 2.2rem;
 
 `;
